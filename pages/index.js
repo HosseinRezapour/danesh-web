@@ -28,16 +28,19 @@ export default function Home() {
 
   return (
     <div className="flex flex-col md:flex-row ">
-      <div className="order-7 md:-order-1 mx-6 md:m-0">
+      <div className="hidden xl:block">
 
         <Toolbar />
       </div>
 
-      <div className=" w-full  ">
+      <div className=" w-full order-1 ">
 
 
         <TopBar />
+        <div className="xl:hidden block">
 
+          <Toolbar />
+        </div>
 
         <div className="flex flex-col my-6 md:my-0 gap-3 md:gap-0 md:flex-row">
 

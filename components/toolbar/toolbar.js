@@ -36,16 +36,13 @@ const toolbarItem = ({ title, image }) => (
 
 
 export default function Toolbar() {
-
-
-
     return (<>
-        <div className="md:w-[300px] h-full border border-black bg-white">
-            <div className="m-6 ">
+        <div className="xl:w-[300px] h-full border m-6 md:m-0 border-black bg-white">
+            <div className="m-3 ">
                 <div className="flex justify-center w-full ">
                     <Image src={'/images/logo.svg'} width={128} height={48} alt="logo" />
                 </div>
-                <div className="mt-3 md:mt-16 grid grid-cols-4 gap-3 md:grid-cols-1">
+                <div className="mt-3 md:mt-16 grid grid-cols-4 gap-1 xl:grid-cols-1">
                     {toolbarItems.map((item) => (<div className="cursor-pointer" key={item.id}> {toolbarItem(item)} </div>))}
                 </div>
             </div>
